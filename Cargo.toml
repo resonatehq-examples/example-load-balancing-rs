@@ -1,0 +1,21 @@
+[package]
+name = "example-load-balancing-rs"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Service discovery and automatic load balancing across multiple Resonate Rust workers."
+
+[[bin]]
+name = "worker"
+path = "src/bin/worker.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
+
+[dependencies]
+resonate = { package = "resonate-sdk", git = "https://github.com/resonatehq/resonate-sdk-rs", branch = "main" }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+uuid = { version = "1", features = ["v4"] }
+rand = "0.8"
