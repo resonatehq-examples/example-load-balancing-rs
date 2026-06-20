@@ -101,7 +101,7 @@ brew install resonatehq/tap/resonate
 resonate dev
 ```
 
-If you don't have brew, you can try [one of these other methods of installation](https://docs.resonatehq.io/operate/server-installation).
+If you don't have brew, you can try [one of these other methods of installation](https://docs.resonatehq.io/deploy/run-server).
 
 Run multiple worker instances, each in its own terminal.
 We recommend running at least 3 instances to get the best demonstration.
@@ -122,4 +122,4 @@ cargo run --bin client
 
 - [Resonate Documentation](https://docs.resonatehq.io)
 - [Rust SDK Guide](https://docs.resonatehq.io/develop/rust)
-- [Worker Groups and Load Balancing](https://docs.resonatehq.io/concepts/targets)
+- [Worker Groups and Load Balancing](https://docs.resonatehq.io/learn/targets)
